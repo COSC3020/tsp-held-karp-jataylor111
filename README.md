@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13086999&assignment_repo_type=AssignmentRepo)
 # Traveling Salesperson Problem -- Held-Karp Algorithm
 
 This exercise is about the Traveling Salesperson Problem I mentioned in the
@@ -46,3 +47,13 @@ Test your new function; I've provided some basic testing code in `code.test.js`.
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+## My Response
+### Time Complexity
+My complexity should be $\Theta(n^22^n)$ because I have to iterate through one set of nested for loops ( $\Theta(n^2)$ ) during which 
+I make the function call, which has another for loop ( $\Theta(n)$ ) and then makes the recursive calls through the subsets of cities with a complexity of ( $\Theta(2^n)$ ) which together get $n^2$*$2^n$ + $n$
+which gets me a complexity of $\Theta(n^22^n)$
+### Memory Complexity
+My memorty complexity should be $\Theta(n2^n)$ this is because it has to store each subset of cities which like before has a complexity of $\Theta(2^n)$ and each starting city of $\Theta(n)$
+
+
