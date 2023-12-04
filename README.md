@@ -49,9 +49,9 @@ is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
 
 ## My Response
-My complexity should be in the ball park of $\Theta(n^32^n)$ because I have to iterate through one set of nested for loops ( $\Theta(n^2)$ ) during which 
-I make the function call, which has another for loop ( $\Theta(n)$ ) and then makes the recursive calls ( $\Theta(2^n)$ ) which together get $n^2$ * $n$ * $2^n$ 
-which gets me a complexity of $\Theta(n^32^n)$
+My complexity should be in the ball park of $\Theta(n^22^n)$ because I have to iterate through one set of nested for loops ( $\Theta(n^2)$ ) during which 
+I make the function call, which has another for loop ( $\Theta(n)$ ) and then makes the recursive calls ( $\Theta(2^n)$ ) which together get $n^2$*$2^n$ + $n$
+which gets me a complexity of $\Theta(n^22^n)$
 
 
 
